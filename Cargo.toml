@@ -1,0 +1,10 @@
+[package]
+name = "just_localize_bro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+faer = "0.24.4"
+plotters = { version = "0.3.7", default-features = false, features = ["full_palette", "line_series", "svg_backend", "ttf"] }
+rayon = "1.12.0"
+statrs = "0.18.0"
