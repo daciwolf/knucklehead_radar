@@ -764,6 +764,7 @@ name = "just_localize_bro"
 version = "0.1.0"
 dependencies = [
  "faer",
+ "noise",
  "plotters",
  "rand 0.9.5",
  "rayon",
@@ -946,6 +947,17 @@ checksum = "b9a513473dce7dc00c7e7c318481ca4494034e76997218d8dad51bd9f007a815"
 dependencies = [
  "nano-gemm-codegen",
  "nano-gemm-core",
+]
+
+[[package]]
+name = "noise"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6da45c8333f2e152fc665d78a380be060eb84fad8ca4c9f7ac8ca29216cff0cc"
+dependencies = [
+ "num-traits",
+ "rand 0.8.7",
+ "rand_xorshift",
 ]
 
 [[package]]
@@ -1340,6 +1352,15 @@ checksum = "6a8615d50dcf34fa31f7ab52692afec947c4dd0ab803cc87cb3b0b4570ff7463"
 dependencies = [
  "num-traits",
  "rand 0.9.5",
+]
+
+[[package]]
+name = "rand_xorshift"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d25bf25ec5ae4a3f1b92f929810509a2f53d7dca2f50b794ff57e3face536c8f"
+dependencies = [
+ "rand_core 0.6.4",
 ]
 
 [[package]]
